@@ -236,7 +236,7 @@ function initPullCord() {
   adaptViewport();
 
   if (isDark) applyDark(true, false);
-  if (localStorage.getItem(STORE)===null && window.matchMedia('(prefers-color-scheme:dark)').matches) applyDark(true, false);
+  if (localStorage.getItem(STORE)===null && window.matchMedia('(prefers-color-scheme:light)').matches) applyDark(true, false);
 }
 initPullCord();
 
